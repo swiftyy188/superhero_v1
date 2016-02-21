@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular Super Heros</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body ng-app="super" ng-controller="hero">
+      <h1>Angular Super Hero Registry</h1>
+      <table border="1">
+        <tr>
+          <td> Super hero</td>
+          <td> Powers</td>
+        </tr>
+        <tr>
+          <td>{{hero.hero}}</td>
+          <td>{{hero.powers}} </td>
+        </tr>
+      </table>
+
+      <p>The hero's name:</p>
+      <input type="text" ng-model="heroName"/>
+      <p>The hero's super power:</p>
+      <input type="text" ng-model="superPower"/>
+      <script src="./angular.min.js"></script>
+      <script src="./super_hero.js"></script>
+  </body>
+</html>
